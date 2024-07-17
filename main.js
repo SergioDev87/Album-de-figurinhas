@@ -1,6 +1,6 @@
 
 const btnCodigo = document.querySelector('#btnCodigo')
-const codigos = ['c1', 'c2', 'c3', 'd1'];
+const codigos = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8'];
 let myPictures = [];
 let myPicturesStringRecuperado = localStorage.getItem('myPictures')
 let myPicturesRecuperado = JSON.parse(myPicturesStringRecuperado);
@@ -32,15 +32,15 @@ function openPicture(cont) {
 }
 
 function conferirCodigo() {
-  let codigo = document.querySelector('#codigo').value;
+  let codigo = document.querySelector('#codigo');
   let cont = 1;
   for(let i=0; i < codigos.length; i++){
     let c = codigos[i];
     
-    if(codigo === c) {
+    if(codigo.value === c) {
       let picture = document.getElementById('p' + cont.toString());
       openPicture(picture);
-      
+      codigo.value = '';
       if(myPicturesRecuperado === null) {
         myPictures.push(c);
         myPicturesString = JSON.stringify(myPictures);
@@ -52,7 +52,7 @@ function conferirCodigo() {
        
       }
    
-      
+      openMsgCode();
     }
     cont++;
     
@@ -60,7 +60,11 @@ function conferirCodigo() {
 
 }
 
-
+function openMsgCode() {
+  let msgCode = document.querySelector('#msg-code');
+  msgCode.style.display = 'block';
+  setTimeout(() => msgCode.style.display = 'none', 5000)
+}
 
 function openModal(codigo) {
   modal.style.display ='block';
@@ -73,3 +77,22 @@ function openModal(codigo) {
 function closerModal() {
   modal.style.display = 'none';
 }
+
+document.getElementById('btn-menu').addEventListener('click', () => abrirMenu());
+let menu = document.getElementById('menu');
+let menuStatus = 'off';
+
+function abrirMenu() {
+  if (menuStatus === 'off') {
+    menu.style.marginLeft = 0;
+    menuStatus= 'on'
+  }
+}
+
+function closerMenu() {
+  menu.style.marginLeft = '-260px';
+  menuStatus = 'off'
+}
+
+let container = document.querySelector('.container');
+container.addEventListener('click', ()=> closerMenu())

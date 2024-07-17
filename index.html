@@ -15,19 +15,50 @@
 </head>
 
 <body>
- <div class="barra">
-    <p class="titu">Figurinhas<br><b>NOSSO CLUBE</b></p>
+   
+   <div class="barra" id="barra">
+      <div id="btn-menu">
+        <!--<img src="assets/img/menu.jpeg"> -->
+        <div class="icone-menu"></div>
+        <div class="icone-menu"></div>
+        <div class="icone-menu"></div>
+      </div>
+      
+      <div class="titulo">
+        <h1>NOSSO CLUBE</h1>
+        <h2>figurinhas</h2>
+      </div>
+      <div class="btn-troca-tema" id="btn-tema">
+        <!--<img class="icone-troca-tema" src="./assets/img/btn-tema.png"/>-->
+      </div>
+    </div>
+    
+    
+        <nav id="menu">
+            <!-- Seu conteúdo do menu aqui -->
+            <h3><a href="#">Desbravar</a></h3>
+            <hr>
+            <div id="code">
+              <h3>Codigo</h3>
+              <input type="text" id="codigo"/>
+              <button id="btnCodigo">Ok</button>
+              <p id="msg-code">Figurinha adicionada com sucesso</p>
+             </div>
+            <hr>
+            <h3><a href="#">Política de Privacidade</a></h3>
+        </nav>
+    
     <!-- Project -->
-   <span>Código:</span>
-    <input type="text" id="codigo"/>
-   <button id="btnCodigo">Confimar</button>
- </div>
     <div class="container">
-    <div class="picture" id="1"><img src="img/p.jpg" alt="" class="img" id="p1"></div>
-    <div class="picture" id="2"><img src="img/p.jpg" alt="" class="img" id="p2"></div>
-    <div class="picture" id="3"><img src="img/p.jpg" alt="" class="img" id="p3"></div>
-    <div class="picture" id="4"><img src="img/p.jpg" alt="" class="img" id="p4"></div>
-   </div>
+     <div class="picture" id="1"><img src="img/p.jpg" alt="" id="p1"><p class="number">1 - Soldados da Luz</p></div>
+     <div class="picture" id="2"><img src="img/p.jpg" alt="" id="p2"><p class="number">2 - Soldados da Luz</p></div>
+     <div class="picture" id="3"><img src="img/p.jpg" alt="" id="p3"><p class="number">2 - Soldados da Luz</p></div>
+     <div class="picture" id="4"><img src="img/p.jpg" alt="" id="p4"><p class="number">2 - Soldados da Luz</p></div>
+     <div class="picture" id="5"><img src="img/p.jpg" alt="" id="p5"></div>
+     <div class="picture" id="6"><img src="img/p.jpg" alt="" id="p6"></div>
+     <div class="picture" id="7"><img src="img/p.jpg" alt="" id="p7"></div>
+     <div class="picture" id="8"><img src="img/p.jpg" alt="" id="p8"></div>
+    </div>
    <div id="modal">
      <!-- inserir codigo com js-->
    </div>
