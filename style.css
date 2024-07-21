@@ -4,11 +4,11 @@
 }
 
 body {
-    font-size: 16pt;
-    color:#fff;
+  font-size: 16pt;
+  color:#fff;
    /* background: #FFE4A2; */
-   background: rgb(255,244,148);
-   background: linear-gradient(180deg, rgba(255,244,148,1) 15%, rgba(244,133,133,1) 85%);
+  background: rgb(255,244,148);
+  background: linear-gradient(180deg, rgba(255,244,148,1) 15%, rgba(244,133,133,1) 85%);
 }
 
 .barra {
@@ -69,46 +69,59 @@ h2 {
 
 
 #menu {
-    width: 200px;
-    height: 100vh;
-    background: #fff;
-    opacity: 1;
-    color: #fff;
-    box-shadow: 0 0 5px black;
-    padding: 20px;
-    margin-left: -260px;
-   
-    position: fixed;
-    transition: 0.5s;
-    
-    font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  opacity: 1;
+  color: #fff;
+  box-shadow: 0 0 5px black;
+  padding: 0 20px;
+  margin-left: -290px;
+  position: fixed;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#menu > h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: black;
-} 
-
-#menu h3 a {
-  font-size: 16px;
+#menu h3 {
+  font-size: 20px;
   color:#0029FF;
   text-decoration: none;
+  margin: 25px 0;
 }
 
-
-#code {
-  background-color: gray;
-  padding: 10px;
+#menu > p {
+  font-size: 18px;
+  color: #000;
+  margin: 20px 0;
 }
+
 
 #code input {
   width: 150px;
+  height: 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #FF9200;
+  margin-bottom: 25px
+}
+
+#btn-code {
+  width: 35px;
+  height: 25px;
   border-radius: 5px;
 }
 
 #msg-code {
   display: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#btn-copy {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .container {
